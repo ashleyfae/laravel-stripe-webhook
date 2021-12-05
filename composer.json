@@ -1,0 +1,26 @@
+{
+    "name": "ashleyfae/laravel-stripe-webhook",
+    "description": "Receive and process webhooks from Stripe.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ashleyfae\\LaravelStripeWebhook\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "stripe/stripe-php": "^7.104"
+    },
+    "require-dev": {
+        "orchestra/testbench": "7.0.x-dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ashleyfae\\LaravelStripeWebhook\\StripeWebhookServiceProvider"
+            ]
+        }
+    }
+}
