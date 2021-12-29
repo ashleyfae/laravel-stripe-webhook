@@ -12,6 +12,6 @@ namespace Ashleyfae\LaravelStripeWebhook;
 interface WebhookEventHandler
 {
 
-    public function handle(object $payload): mixed;
+    public function handle(object $payload): void;
 
 }
