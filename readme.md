@@ -8,6 +8,6 @@ Update the `VerifyCsRfToken` middleware to exclude `stripe/webhook` from CSRF ve
 
 ```php
 protected $except = [
-    'stripe/webhook/*'
+    'stripe/webhook'
 ];
 ```
